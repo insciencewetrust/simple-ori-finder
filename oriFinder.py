@@ -19,10 +19,10 @@ def Skew(DNASeq):
 
 def oriFinder(DNASeq):
     skewMap=Skew(DNASeq)
-    """ #Optional plotting of skew
-    plt.plot(skewMap["positions"], skewMap["skews"])
-    plt.show()
-    """
+    #plt.plot(skewMap["positions"], skewMap["skews"])
+    #plt.xlabel("Position")
+    #plt.ylabel("Skew")
+    #plt.show()
     idxList=[]
     oriList=[]
     minSkew=min(skewMap["skews"])
